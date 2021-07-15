@@ -1,0 +1,30 @@
+{
+  "name": "dns-serial",
+  "description": "Generating a new DNS Serial Number and editing the current one with last change in ISO 8601 format",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Sebastian Korotkiewicz",
+  "license": "MIT",
+  "keywords": [
+    "dns",
+    "serial",
+    "generate",
+    "edit",
+    "iso8601"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skorotkiewicz/dns-serial.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skorotkiewicz/dns-serial/issues"
+  },
+  "homepage": "https://github.com/skorotkiewicz/dns-serial#readme",
+  "scripts": {
+    "test": "jest",
+    "prepare": "yarn test"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}

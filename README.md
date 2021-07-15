@@ -24,7 +24,7 @@ serial(); // number: 2021071500
 
 // Edit an existing serial
 serial(2021071500); // number: 2021071501
-serial(2021071502); // number: 2021071503
+serial(1991071502); // number: 2021071503
 
 // Invalid serial
 serial(123); // number: 2021071501

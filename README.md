@@ -22,10 +22,11 @@ const serial = require("dns-serial");
 // Get new serial
 serial(); // number: 2021071500
 
-// Edit an existing serial
+// If it is today's date increase the number of changes, if not reset the number of changes and give the current date
+
 serial(2021071500); // number: 2021071501
-serial(1991071502); // number: 2021071503
+serial(1991012702); // number: 2021071500
 
 // Invalid serial
-serial(123); // number: 2021071501
+serial(123); // number: 2021071500
 ```

@@ -1,7 +1,7 @@
 {
   "name": "dns-serial",
   "description": "Generating a new DNS Serial Number and editing the current one with last change in ISO 8601 format",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "author": "Sebastian Korotkiewicz",
   "license": "MIT",

@@ -12,8 +12,14 @@ module.exports = generate = (prev) => {
     if (prev.length !== 10) prev = prev.padEnd(10, "0");
 
     change = prev.substr(-2);
-    change = Number(change) + 1;
-    change = String(change);
+
+    if (isToday(prev)) {
+      change = Number(change) + 1;
+      change = String(change);
+    } else {
+      change = "00";
+    }
+
     if (change < 10) change = change.padStart(2, "0");
   }
 
@@ -24,4 +30,13 @@ module.exports = generate = (prev) => {
   }
 
   return Number(serial);
+};
+
+const isToday = (prev) => {
+  prev = prev.slice(0, -2);
+
+  prev = prev.substring(0, 4) + "-" + prev.substring(4);
+  prev = prev.substring(0, 7) + "-" + prev.substring(7);
+
+  return new Date(prev).toDateString() === new Date().toDateString();
 };
